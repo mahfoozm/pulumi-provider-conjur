@@ -1,6 +1,7 @@
-# Foo Resource Provider
+# Conjur Resource Provider
 
-The Foo Resource Provider lets you manage [Foo](http://example.com) resources.
+TO-DO: fill out README
+The Conjur Resource Provider lets you manage [Conjur](http://example.com) resources.
 
 ## Installing
 

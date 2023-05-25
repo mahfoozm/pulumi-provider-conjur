@@ -1,0 +1,136 @@
+{
+    "name": "conjur",
+    "description": "A Pulumi package for creating and managing conjur cloud resources.",
+    "keywords": [
+        "pulumi",
+        "conjur",
+        "category/cloud"
+    ],
+    "homepage": "https://www.pulumi.com",
+    "license": "Apache-2.0",
+    "attribution": "This Pulumi package is based on the [`conjur` Terraform Provider](https://github.com/terraform-providers/terraform-provider-conjur).",
+    "repository": "https://github.com/pulumi/pulumi-conjur",
+    "publisher": "Pulumi",
+    "meta": {
+        "moduleFormat": "(.*)(?:/[^/]*)"
+    },
+    "language": {
+        "csharp": {
+            "compatibility": "tfbridge20",
+            "namespaces": null,
+            "packageReferences": {
+                "Pulumi": "3.*"
+            }
+        },
+        "go": {
+            "generateExtraInputTypes": true,
+            "generateResourceContainerTypes": true,
+            "importBasePath": "github.com/pulumi/pulumi-conjur/sdk/go/conjur"
+        },
+        "nodejs": {
+            "compatibility": "tfbridge20",
+            "dependencies": {
+                "@pulumi/pulumi": "^3.0.0"
+            },
+            "devDependencies": {
+                "@types/mime": "^2.0.0",
+                "@types/node": "^10.0.0"
+            },
+            "disableUnionOutputTypes": true,
+            "packageDescription": "A Pulumi package for creating and managing conjur cloud resources.",
+            "packageName": "",
+            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/terraform-providers/terraform-provider-conjur)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-conjur` repo](https://github.com/pulumi/pulumi-conjur/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-conjur` repo](https://github.com/terraform-providers/terraform-provider-conjur/issues).",
+            "typescriptVersion": ""
+        },
+        "python": {
+            "compatibility": "tfbridge20",
+            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/terraform-providers/terraform-provider-conjur)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-conjur` repo](https://github.com/pulumi/pulumi-conjur/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-conjur` repo](https://github.com/terraform-providers/terraform-provider-conjur/issues).",
+            "requires": {
+                "pulumi": "\u003e=3.0.0,\u003c4.0.0"
+            }
+        }
+    },
+    "config": {
+        "variables": {
+            "account": {
+                "type": "string",
+                "description": "Conjur account\n"
+            },
+            "apiKey": {
+                "type": "string",
+                "description": "Conjur API key\n"
+            },
+            "applianceUrl": {
+                "type": "string",
+                "description": "Conjur endpoint URL\n"
+            },
+            "login": {
+                "type": "string",
+                "description": "Conjur login\n"
+            },
+            "sslCert": {
+                "type": "string",
+                "description": "Content of Conjur public SSL certificate\n"
+            },
+            "sslCertPath": {
+                "type": "string",
+                "description": "Path to Conjur public SSL certificate\n"
+            }
+        }
+    },
+    "provider": {
+        "description": "The provider type for the conjur package. By default, resources use package-wide configuration\nsettings, however an explicit `Provider` instance may be created and passed during resource\nconstruction to achieve fine-grained programmatic control over provider settings. See the\n[documentation](https://www.pulumi.com/docs/reference/programming-model/#providers) for more information.\n",
+        "properties": {
+            "account": {
+                "type": "string",
+                "description": "Conjur account\n"
+            },
+            "apiKey": {
+                "type": "string",
+                "description": "Conjur API key\n"
+            },
+            "applianceUrl": {
+                "type": "string",
+                "description": "Conjur endpoint URL\n"
+            },
+            "login": {
+                "type": "string",
+                "description": "Conjur login\n"
+            },
+            "sslCert": {
+                "type": "string",
+                "description": "Content of Conjur public SSL certificate\n"
+            },
+            "sslCertPath": {
+                "type": "string",
+                "description": "Path to Conjur public SSL certificate\n"
+            }
+        },
+        "inputProperties": {
+            "account": {
+                "type": "string",
+                "description": "Conjur account\n"
+            },
+            "apiKey": {
+                "type": "string",
+                "description": "Conjur API key\n"
+            },
+            "applianceUrl": {
+                "type": "string",
+                "description": "Conjur endpoint URL\n"
+            },
+            "login": {
+                "type": "string",
+                "description": "Conjur login\n"
+            },
+            "sslCert": {
+                "type": "string",
+                "description": "Content of Conjur public SSL certificate\n"
+            },
+            "sslCertPath": {
+                "type": "string",
+                "description": "Path to Conjur public SSL certificate\n"
+            }
+        }
+    }
+}
